@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Huobi.Rest.CSharp.Demo;
+using Huobi.Rest.CSharp.Demo.Model;
 
 namespace Wpftest
 {
@@ -23,6 +25,13 @@ namespace Wpftest
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        HuobiApi api = new HuobiApi("11573ab9-2b59a811-48f6d01a-a431b", "c1db909f-99d7feaa-101233a7-7a7d3");
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var result = api.GetAllAccount();
         }
     }
 }

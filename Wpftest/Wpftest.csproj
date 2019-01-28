@@ -94,5 +94,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Huobi.Rest.CSharp.Demo\Huobi.Rest.CSharp.Demo.csproj">
+      <Project>{c39dfdcc-a41b-4910-8121-3155c4de898e}</Project>
+      <Name>Huobi.Rest.CSharp.Demo</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
